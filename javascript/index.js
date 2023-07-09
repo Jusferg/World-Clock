@@ -28,6 +28,22 @@ parisDateElement.innerHTML = parisTime.format("MMMM Do YYYY");
 parisTimeElement.innerHTML = parisTime.format("h:mm:ss [<small>]A[</small>]");
 
 }
+
+// Johannesburg
+let JohannesburgElement = document.querySelector("#johannesburg");
+if (JohannesburgElement) {
+let JohannesburgDateElement = JohannesburgElement.querySelector(".date");
+let JohannesburgTimeElement = JohannesburgElement.querySelector(".time");
+let JohannesburgTime = moment().tz("Africa/Johannesburg");
+
+
+
+JohannesburgDateElement.innerHTML = JohannesburgTime.format("MMMM Do YYYY");
+JohannesburgTimeElement.innerHTML = JohannesburgTime.format("h:mm:ss [<small>]A[</small>]");
+
+}
+
+
 }
 
 function updateCity(event) {
