@@ -1,15 +1,23 @@
 body {
-    background-color: tan;
+    background-image: url("images/worldmap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     font-family: sans-serif;
 }
 
 .container {
     max-width: 600px;
     margin: 60px auto;
-    background: white;
+    background: rgba(135,132,122);
     padding: 30px;
-    box-shadow: 10px 10px 5px gray;
+    box-shadow: 10px 10px 5px #393131;
     border-radius: 10px;
+}
+
+a {
+    color: white;
 }
 
 h1 {
@@ -61,5 +69,5 @@ select {
 footer {
     text-align: center;
     font-size: 18px;
-    color: rgba(0, 0, 0. 0.8);
+    color: white;
 }
